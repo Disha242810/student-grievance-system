@@ -1,0 +1,192 @@
+/* Reset + Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f9fbfd; /* soft white */
+  color: #333;
+  padding: 20px;
+}
+
+/* Container */
+div {
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Headings */
+h2 {
+  margin-bottom: 15px;
+  color: #1e3a5f; /* muted blue */
+}
+
+/* Forms */
+form {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #dfe6ee;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  margin-bottom: 20px;
+}
+
+/* Inputs */
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 6px;
+  border: 1px solid #ccd6e0;
+  background-color: #f7f9fc;
+  transition: 0.2s;
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: #4a90e2;
+  background-color: #fff;
+}
+
+/* Buttons */
+button {
+  padding: 8px 14px;
+  margin: 5px 5px 5px 0;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+/* Primary buttons */
+button[type="submit"] {
+  background-color: #4a90e2;
+  color: white;
+}
+
+button[type="submit"]:hover {
+  background-color: #357abd;
+}
+
+/* Secondary buttons */
+button:not([type="submit"]) {
+  background-color: #e4e9f0;
+  color: #333;
+}
+
+button:not([type="submit"]):hover {
+  background-color: #d6dde6;
+}
+
+/* Logout button */
+button:last-child {
+  background-color: #1e3a5f;
+  color: white;
+}
+
+button:last-child:hover {
+  background-color: #162c47;
+}
+
+/* Links (switch login/register) */
+p {
+  margin-top: 10px;
+  color: #4a90e2;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+p:hover {
+  text-decoration: underline;
+}
+
+/* Search bar */
+input[placeholder="Search"] {
+  width: calc(100% - 120px);
+  display: inline-block;
+}
+
+button + button {
+  margin-left: 5px;
+}
+
+/* Grievance List */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #ffffff;
+  border: 1px solid #e1e6ec;
+  border-left: 4px solid #4a90e2;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Title */
+li b {
+  color: #2c3e50;
+}
+
+/* Status */
+li span {
+  font-size: 13px;
+  margin-left: 10px;
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+
+li .resolved {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+li .pending {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+/* Buttons inside list */
+li button {
+  margin-left: 5px;
+}
+
+/* Dashboard header */
+h2 + button {
+  float: right;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  div {
+    padding: 10px;
+  }
+
+  li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  li div {
+    margin-top: 10px;
+  }
+}
+.no-records {
+  text-align: center;
+  padding: 20px;
+  color: #7a8a9a; /* soft grey */
+  background: #ffffff;
+  border: 1px dashed #d0d7e2;
+  border-radius: 8px;
+  margin-top: 10px;
+  font-style: italic;
+}
